@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+
+body {
+	padding: 0; margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.page-wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.controls {
+	margin: 0 0 15px 0;
+}
+.controls {
+
+}
+.controls {
+
+}
+
+table {
+	border: 1px solid #dedede;
+}
+table thead td {
+	font-weight: 600;
+}
+table thead tr,
+table tr {
+	border-bottom: 1px solid #dedede;
+}
+table tr:last-of-type {
+	border: none;
+}
+table td {
+	padding: 10px 15px;
+}
