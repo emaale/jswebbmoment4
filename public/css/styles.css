@@ -10,18 +10,28 @@ body {
 }
 
 .page-wrapper {
-	max-width: 900px;
+	max-width: 480px;
 	margin: 0 auto;
 }
 
 .controls {
-	margin: 0 0 15px 0;
+	margin: 0 0 10px 0;
 }
-.controls {
-
+.controls .create-todoitem {
+	margin-bottom: 10px;
 }
-.controls {
-
+.controls .create-todoitem button {
+	padding: 7px 20px;
+	border: none;
+	color: white;
+	background: #2ecc71;
+	font-weight: 600;
+}
+.controls input {
+	padding: 5px;
+}
+.controls select {
+	float: right;
 }
 
 table {

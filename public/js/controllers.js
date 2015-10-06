@@ -12,9 +12,13 @@ courseApp.controller("todoCtrl", ["$scope", "$http", function($scope, $http) {
 	$scope.createTodoItem = function(desc) {
 		$http.post("/todoitem", {description: desc}).
 			then(function(response) {
-				// Add the newly created todoitem to the todoitems array
-				$scope.todoitems.push(response.data.todoitem);
-			});
+				if(desc != "") {
+					// Add the newly created todoitem to the todoitems array
+					$scope.todoitems.push(response.data.todoitem);
+				}
+
+				$scope.showInput = true;
+			}); 
 	};
 
 	// Function that toggles the isFinished boolean
