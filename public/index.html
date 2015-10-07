@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="todoApp">
+<html data-ng-app="todoApp">
 <head>
 	<meta charset="utf-8">
 	<title>Courses</title>
 
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
-<body ng-controller="todoCtrl">
+<body data-ng-controller="todoCtrl">
 
 	<!-- Wraps the whole page content -->
 	<div class="page-wrapper">
@@ -14,14 +14,14 @@
 
 		<aside class="controls">
 			<form class="create-todoitem">
-				<input type="text" placeholder="What's up?" ng-model="newDescription" required>
-				<button ng-click="createTodoItem(newDescription)">Add</button>
+				<input type="text" placeholder="What's up?" data-ng-model="newDescription" required>
+				<button data-ng-click="createTodoItem(newDescription)">Add</button>
 			</form>
 
-			<input type="text" placeholder="Search..." ng-model="searchFilter">
+			<input type="text" placeholder="Search..." data-ng-model="searchFilter">
 
 			<!-- Select box that filters the todoitems -->
-			<select name="singleSelect" ng-model="selectFilter" ng-init="selectFilter = 'description'">
+			<select name="singleSelect" data-ng-model="selectFilter" data-ng-init="selectFilter = 'description'">
 		      <option value="description">Description ASC</option>
 		      <option value="-description">Description DESC</option>
 		      <option value="created_at">Date ASC</option>
@@ -47,7 +47,7 @@
 
 					<!-- Checks the input box if isFinished is true -->
 					<td>
-						<input type="checkbox" ng-checked="todoitem.isFinished" ng-click="toggleIsFinished(todoitem.id)">
+						<input type="checkbox" data-ng-checked="todoitem.isFinished" data-ng-click="toggleIsFinished(todoitem.id)">
 					</td>
 				</tr>
 			</tbody>
