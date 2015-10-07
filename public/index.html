@@ -40,7 +40,7 @@
 			</thead>
 
 			<tbody>
-				<tr ng-repeat="todoitem in todoitems | filter: searchFilter | orderBy:selectFilter">
+				<tr data-ng-repeat="todoitem in todoitems | filter: searchFilter | orderBy:selectFilter">
 					<td>{{ todoitem.id }}</td>
 					<td>{{ todoitem.description }}</td>
 					<td>{{ todoitem.created_at | date:'yyyy-MM-dd, kl HH:mm' }}</td>
